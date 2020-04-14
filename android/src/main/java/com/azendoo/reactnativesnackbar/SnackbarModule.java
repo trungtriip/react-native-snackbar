@@ -114,6 +114,7 @@ public class SnackbarModule extends ReactContextBaseJavaModule {
 
         TextView snackbarText = snackbarView.findViewById(com.google.android.material.R.id.snackbar_text);
         snackbarText.setTextColor(textColor);
+        snackbarText.setMaxLines(3);
 
         if (font != null) {
             snackbarText.setTypeface(font);
